@@ -56,7 +56,7 @@ export default {
     dateBuilder () {
       let d = new Date();
       let months = ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Decembre"];
-      let days = ["Dimanche","Lundi","Mardi","Mercredi","Jundi","Vendredi","Samedi"];
+      let days = ["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
 
       let day = days[d.getDay()];
       let date = d.getDate();
@@ -64,8 +64,8 @@ export default {
       let year = d.getFullYear();
 
       return `${day} ${date} ${month} ${year}`;
-    }
-  },
+    },
+
   components: {
   }
 }
